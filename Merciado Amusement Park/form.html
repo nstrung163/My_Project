@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ticket booking | Merciado Amusement Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="b_j/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="b_j/fontawesome-free/js/all.js">
+    <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="b_j/js/baguettebox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="b_j/css/baguettebox.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/logo.css">
+    <link rel="icon" href="images/logopark.png" type="image/png" sizes="16x16">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="glow" src="images/logomap.jpg" style="width: 100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurant.html">Restaurants</a>
+                    </li>             
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="ticket.html" id="mydropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Tickets & Price
+                        </a>
+                        <div class="dropdown-content" aria-labelledby="mydropdown" style="background-color: #24b4fa;">
+                            <a class="dropdown-item active" href="singleticket.html">Single Day Tickets</a>
+                            <a class="dropdown-item" target="_blank" href="account.html"> Passes and Memberships</a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="py-4 text-center text-primary font-weight-bold text-uppercase">Form Information Register</h2>
+				<div class="row">
+	            	<div class="col-md-6 mx-auto">
+	                    <div class="card border-secondary bg-success">
+	                        <div class="card-header bg-primary"><h3 class="font-weight-bold text-white mb-0 my-2">Book Ticket</h3>
+	                        </div>
+	                    	<div class="card-body">
+								<form class="border rounded py-4 px-4 bg-info" method="post">
+						            <div class="row">
+						              <div class="col-sm-6">
+						                <div class="form-group">
+						                  <label for="first">First Name<span class="text-danger">(*)</span></label>
+						                  <input class="form-control" type="text" name="first" placeholder="Enter firstname" required>
+						                </div>
+						              </div>
+						              <div class="col-sm-6">
+						                <div class="form-group">
+						                  <label for="last">Last Name<span class="text-danger">(*)</span></label>
+						                  <input class="form-control" type="text" name="last" placeholder="Enter lastname" required>
+						                </div>
+						              </div>
+						            </div>
+
+						            <div class="row">
+						              <div class="col-sm-6">
+						                <div class="form-group">
+						                  <label for="email">Email<span class="text-danger">(*)</span></label>
+						                  <input class="form-control" type="email" name="email" placeholder="Enter email" required>
+						                </div>
+						              </div>
+						              <div class="col-sm-6">
+						                <div class="form-group">
+						                  <label for="phone">Phone<span class="text-danger">(*)</span></label>
+						                  <input class="form-control" type="text" name="phone" placeholder="Enter phone" required>
+						                </div>
+						              </div>
+						            </div>
+
+						            <div class="row">
+						              <div class="col-sm-6">
+						                <div class="form-group">
+						                  <label for="date">Date playing<span class="text-danger">(*)</span></label>
+						                  <input class="form-control" type="date" name="date" required>
+						                </div>
+						              </div>
+						              <div class="col-sm-6">
+						                <div class="form-group">
+						                  <label for="shift">Play shift<span class="text-danger">(*)</span></label>
+						                  <select class="form-control" name="shift" required>
+						                    <option value="text" selected="selected">Play shift</option>
+						                    <option value="shift1">(9:00 - 15:30)</option>
+						                    <option value="shift2">(16:00 - 21:30)</option>
+						                  </select>  
+						                </div>
+						              </div>
+						            </div>
+
+						            <div class="row">
+						              	<div class="col-sm-6">
+							                <div class="form-group">
+							                  <label for="adults">Adults<span class="text-danger">(*)</span></label>
+							                  <input class="form-control" type="number" name="adults" min="0" required>
+							                </div>
+						            	</div>
+
+							            <div class="col-sm-6">
+							                <div class="form-group">
+							                  <label for="children">Children<span class="text-danger">(*)</span></label>
+							                  <input class="form-control" type="number" name="children" min="0" required>
+							                </div>
+							            </div>
+						            </div>
+						            <div class="row">
+						              <div class="col-12">
+						                <button class="btn btn-primary btn-lg mr-4 font-weight-bold" type="button" data-toggle="modal" data-target="#myModal">CHECK OUT</button>
+
+										  <!-- The Modal -->
+										  <div class="modal fade" id="myModal">
+										    <div class="modal-dialog">
+										      <div class="modal-content">
+										      
+										        <!-- Modal Header -->
+										        <div class="modal-header">
+										          <h4 class="modal-title">CONFIRM</h4>
+										          <button type="button" class="close" data-dismiss="modal">&times;</button>
+										        </div>
+										        
+										        <!-- Modal body -->
+										        <div class="modal-body text-center">
+										        	Thank you for registering<br>
+										          	Your registration information will be noted in a few minutes<br>
+										          	See you soon
+										        </div>
+										        
+										        <!-- Modal footer -->
+										        <div class="modal-footer">
+										          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										        </div>
+										        
+										      </div>
+										    </div>
+										  </div>
+  
+						              </div>
+						            </div>
+						        </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="my-2">
+<!-- Contacts Us -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.twitter.com>"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.google.com"><i class="fab fa-google-plus"></i></a>
+            <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer -->
+<footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="images/logopark.png" width="30%" height="30%">
+                    <hr class="light">
+                    <p><a class="text-decoration-none text-dark" href="tel:0702402434"><i class="fas fa-mobile-alt"></i> 0702 402 434</a></p>
+                    <a href="mail"></a>
+                    <address>
+                        <p class="text-dark"><i class="far fa-envelope"></i><span> MerciadoAmusementpark@gmail.com</span></p>
+                        <p class="text-dark"><i class="fas fa-map-marker-alt"></i><span> 6 Le Loi street , Thua Thien Hue , Vietnam</span></p>
+                    </address>
+                    
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Working hours</h5>
+                    <hr class="light">
+                    <p>Monday-Friday : 10am - 22pm</p>
+                    <p>Weekend: 8am - 22pm</p>
+
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>SiteMap</h5>
+                    <hr class="light">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                        <li><a href="entertainment.html"><i class="fas fa-parachute-box"></i> ENTERTAINMENT</a></li>
+                        <li><a href="restaurant.html"><i class="fas fa-utensils"></i> RESTAURANTS</a></li>
+                        <li><a href="ticket.html"><i class="fas fa-ticket-alt"></i> TICKETS & PRICE</a></li>
+                        <li><a href="gallery.html"><i class="far fa-images"></i> GALLERY</a></li>
+                        <li><a href="contact.html"><i class="far fa-address-card"></i> CONTACT</a></li>
+                    </ul>
+                   
+                    
+                </div>
+
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h6>Copyright&copy;TNT All right reserved.  Hotline: 1800 1277</h5>
+                    </div>
+                </div>
+            </div>
+</footer>
+</body>
+</html>

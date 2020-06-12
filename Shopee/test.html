@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color:antiquewhite;
+            min-height: 100vh;
+        }
+        .my-column {
+            text-align: center;
+            min-height: 50vh;
+            background-color: orange;
+            line-height:50vh ; /*nằm chính giữa */
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row no-gutters ">
+             <!-- <div class="col l-6 l-o-3"> nó sẽ đứng ở vị trí thứ 3 , kiểu như vị trí xuất hiện -->
+            <!-- <div class="col l-6 l-o-3 m-8 m-o-2 c-12 ">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                </div>
+            </div> -->
+
+            <!-- VÍ DỤ COLUMN -->
+            <!-- <div class="col l-3 m-3 l-o-6 m-o-3 ">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                </div>
+            </div>
+            <div class="col l-3 m-3  ">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                </div>
+            </div> -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ex asperiores aliquid quis quos? Laudantium ipsa consequatur sapiente debitis iusto soluta, corrupti a reiciendis suscipit molestiae rem? Aliquid, aliquam mollitia?</p>
+<!-- VÍ DỤ NO GUTTERS -->
+            <div class="col l-4 m-4 c-6">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                </div>
+            </div>
+            <div class="col l-4 m-4 c-6">
+                <div class="my-column">
+                    <h1>Column 2</h1>
+                </div>
+            </div>
+            <div class="col l-4 m-4 c-6">
+                <div class="my-column">
+                    <h1>Column 3</h1>
+                </div>
+            </div>
+            <div class="col l-4 m-4 c-6">
+                <div class="my-column">
+                    <h1>Column 4</h1>
+                </div>
+            </div>
+            <div class="col l-4 m-4 c-6">
+                <div class="my-column">
+                    <h1>Column 5</h1>
+                </div>
+            </div>
+            <div class="col l-4 m-4 c-6">
+                <div class="my-column">
+                    <h1>Column 6</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

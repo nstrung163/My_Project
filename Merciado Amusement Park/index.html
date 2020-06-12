@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merciado Amusement Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="b_j/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="b_j/fontawesome-free/js/all.js">
+    <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="b_j/js/baguettebox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="b_j/css/baguettebox.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/logo.css">
+    <link rel="icon" href="images/logopark.png" type="image/png" sizes="16x16">
+
+
+    <script>
+        $(document).ready(function(){
+          $("#select").change(function(){
+         
+            var a=$("#select").val();
+            var nd="";
+            if(a=="low"){
+                nd="$20 <del>$25.99</del>";
+            }
+            else{
+               nd="$25.99";        
+            }
+            $("#p1").html(nd);
+          });
+        });
+    </script>
+
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+                <a class="navbar-brach" href="index.html">
+                    <img class="glow" src="images/logomap.jpg" 
+                      width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  ">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurant.html">Restaurants</a>
+                    </li>             
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="ticket.html" id="mydropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Tickets & Price
+                        </a>
+                        <div class="dropdown-content" aria-labelledby="mydropdown" style="background-color: #24b4fa;">
+                            <a class="dropdown-item" href="singleticket.html">Single Day Tickets</a>
+                            <a class="dropdown-item" target="_blank" href="account.html"> Passes and Memberships</a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Carousel -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides"  data-slide-to="0" class="active" ></li>
+        <li data-target="#slides"  data-slide-to="1" ></li>
+        <li data-target="#slides"  data-slide-to="2" ></li>
+        <li data-target="#slides"  data-slide-to="3" ></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/banner/1.png">
+            <div class="carousel-caption">
+                <h1 class="display-2">FAMILY FUN</h1>
+                <h3>All our rides are designed to maximize the age range so that everyone can have a good time</h3>
+                <a href="entertainment.html#entertaiment1">
+                    <button type="button" class="btn btn-outline-light btn-lg">LEAN MORE</button>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner/2.png">
+            <div class="carousel-caption">
+                <h1 class="display-2">TURBO BOOST</h1>
+                <h3> Electric GoKarts with button-activated TURBO BOOST.</h3>
+                <a href="turboboost.html">
+                    <button type="button" class="btn btn-outline-light btn-lg">LEAN MORE</button>
+                </a>
+            </div>
+
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner/3.png">
+            <div class="carousel-caption">
+                <h1 class="display-2">TICKEST</h1>
+                <h3>Buy your tickets online at least a day in advance and save!</h3>
+                <a href="form.html">
+                    <button type="button" class="btn btn-outline-light btn-lg">LEAN MORE</button>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner/7.png">
+            <div class="carousel-caption">
+                <h1 class="display-2">STAY ACTIVE</h1>
+                <h3>We've got a range of attractions that are entertaining and get you moving at the same time!</h3>
+                <a href="entertainment.html#entertaiment3">
+                    <button type="button" class="btn btn-outline-light btn-lg">LEAN MORE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+     </a>
+    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+     </a>
+</div>
+
+<hr class="my-2">
+
+<!-- Breadcumb -->
+<div class="container-fluid">
+    <div class="breadcrb">
+            <span class="breadcrb2">Home</span>
+    </div>
+</div>
+<!-- New Event -->
+
+<hr class="my-2">
+
+
+<div id="sale"><a href="holidaysale.html"><img src="images/sale.png"></a></div>
+
+
+<div class="container-fluid padding" style="border-top: 50px solid yellow; border-bottom: 50px solid yellow;"> 
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-5"><strong>New Event Coming Soon</strong><hr style="border: 0;"></h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid padding"> 
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="images/8.png" >
+                <div class="card-body">
+                    <h4 class="card-title"><b>Marvel Season of Supers Heroes is coming</b></h4>
+                    <p class="card-text">
+                        Feel the might of most epic MARVEL stories exploding to life from 16<sup>th</sup> March  to 10<sup>th</sup> June 2020.
+                    </p>
+                    <a href="marvel.html" class="btn btn-outline-success">Lean More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="images/20.png" >
+                <div class="card-body">
+                    <h4 class="card-title"> <b>Legends of the Force : A Celebration Of <i>Star War</i></b></h4>
+                    <p class="card-text">
+                        Celebrate the Skywalker saga and its most iconic moments from 15<sup>th</sup> January to 20<sup>th</sup> March 2020
+                    </p>
+                    <a href="startwar.html" class="btn btn-outline-success">Lean More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="images/9.png" >
+                <div class="card-body">
+                    <h4 class="card-title"><b>Let enjoy The Lion King & Jungle Festival with some</b></h4>
+                    <p class="card-text">
+                        The much-loved season returns on   from 25<sup>th</sup> December 2019 to 6 <sup>th</sup> June 2020 at Merciado Amusement Park
+                    </p>
+                    <a href="festival.html" class="btn btn-outline-success">Lean more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr class="light-100">
+
+
+<!-- Family Fun -->
+<div class="section-title">A New Level of Family Fun</div>
+<div id="choose">
+    <div class="container">
+      <div class="row" style="border-bottom: 50px solid yellow;">
+            <div class="col-sm-4">
+                <a href="party.html"><img src="images/party.png" alt="Party Time"></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="tickets.html"><img src="images/pricing.png" alt="Park Pricing"></a>
+            </div>
+            <div class="col-sm-4">
+              <a href="aboutus.html"><img src="images/about.png" alt="About Us"></a>
+            </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+            <div class="col-sm-4">
+              <a href="groupfun.html"><img src="images/group.png" alt="Group Fun"></a>
+            </div>
+            <div class="col-sm-4">
+              <a href="tickets.html"><img src="images/seeasonpass.png" alt="Season Passes"></a>
+            </div>
+            <div class="col-sm-4">
+              <a href="FAQ.html"><img src="images/faq.png" alt="FAQ"></a>
+            </div>
+      </div>
+    </div>
+</div>
+
+<!--Daily Admission -->
+<div   id="daily" >
+    <div class="container">
+        <div class="row">
+        <div id="top">
+            <div class="section-title">Daily Admission</div>
+            <h3>For The Best Price, Purchase Your Wristbands At Least One Day In Advance Of Your Visit</h3>
+            <a href="sundayfunday.html">See Also: #SundayFunDay Family Deal, valid Sundays through 2019. Click here for details.</a>
+        </div>
+        <div  class="col-lg-6" id="left">
+                <img src="images/pricing2.png" style="width:100%;height: 850px;">
+        </div>
+        <div class="col-lg-6"  id="right">
+            <h3>Unlimited Wristband: Choose Your Date</h3>
+            <p class="card-text" id="p1">$20.99&nbsp;&nbsp;<del>$25.99</del></p>
+            <select id="select">
+                <option value="low">Friday , December 27</option>
+                <option value="low">Saturday , December 28</option>
+                <option value="low">Sunday , December 29</option>
+                <option value="low">Monday , December 30</option>
+                <option value="low">Tuesday , December 31</option>
+                <option value="high">"Any Day" Ticket</option>
+            </select><br>
+            <input type="number" min="1"> 
+            <a href="form.html"><button class="btn btn-success">BUY NOW</button></a><br>
+            
+            <p><strong>Includes the All-Access "Unlimited Wristband" </strong> All attractions are included for the entire operating day: Switchback Roller Coaster, Ed's Speed Shop Multi-Level GoKart Track, Parachute Drop, Dizzy Toucan, Trampoline Thing, Rock Wall, Silo Climb, Maxflight Simulator, Jungle Playground, Main Building Arcade on Free Play, Rock n' Roll Arcade on Free Play, Mad Raft*, Viper*, and Viper's Tail*.</p>
+            <p><strong>For the best discount, purchase your wristbands at least one day in advance online. Price at the gate: $25.99, or $22.99 from 9/14/19-2/29/20.</strong></p>
+            <p><i>*Water rides reopen weekends in March, weather permitting; see hours page for water ride hours: zdtamusement.com/hours
+            Note: The “Unlimited Wristband” was previously named the “Extreme Wristband”. All references to the “Extreme Wristband” in pre-purchased gift cards or promotions now refer to the “Unlimited Wristband”.</i></p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Passes and Memberships -->
+
+<div class="container-fluid padding"> 
+    <div class="section-title" >Passes and Memberships</div>
+    <h3 style="text-align: center;"><sup>Starting At $5.99/Month Or $74.99/Year</sup></h3>
+    <div class="row padding" >
+        <div class="col-md-4">
+            <div class="card" style="background-color: yellow;">
+                <img class="card-img-top" src="images/seasonpass.png" >
+                <div class="card-body">
+                    <h4 class="card-title"><b>2019+2020 Season Pass</b></h4>
+                    <p class="card-text" id="p2" >
+                        $74.99 <del>$149.98</del>
+                    </p>
+                    <p class="card-text"><strong>Valid Starting</strong></p>
+                    <select id="select2">
+                        <option>Vaild Immediately</option>
+                    </select>
+                    <p class="card-text" ><strong>Expiration Date</strong></p>
+                    <select>
+                        <option>Expires 12/31/2020</option></select>
+
+                    <hr>
+                    <input type="number" min="1" style="width: 50px;height: 43px; text-align: center;"> 
+
+                    <a href="form.html" ><button class="btn btn-success">BUY NOW</button></a><br>
+                    <p><strong>Purchase a pass for next year and get the rest of this year included FREE!</strong></p>
+                    <ul>
+                        <li>Valid immediately, through 12/31/2020</li>
+                        <li>Includes the Unlimited Wristband on each operating day
+                            <ul>
+                                <li>Unlimited Rides</li>
+                                <li>Unlimited Attractions</li>
+                                <li>Unlimited Video Games</li>
+                            </ul>                          
+                        </li>
+                        <li>Parking is always free for MAP's guests</li>
+                        <li>Non-transferable, non-refundable.</li>
+                        <li><a href="rules.html" style="text-decoration: underline; color: black;">Full terms and conditions: www.merciadoamusementpark.com/pass</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="background-color: yellow;">
+                <img class="card-img-top" src="images/premium.png" >
+                <div class="card-body">
+                    <h4 class="card-title"><b>2019+2020 Premium Pass</b></h4>
+                    <p class="card-text">
+                        $99.99 <del>$199.98</del>
+                    </p>
+                    <p class="card-text"><strong>Valid Starting</strong></p>
+                    <select>
+                        <option>Vaild Immediately</option>
+                    </select>
+                    <p class="card-text"><strong>Expiration Date</strong></p>
+                    <select><option>Expires 12/31/2020</option></select>
+                    <hr>
+                    <input type="number" min="1" style="width: 50px;height: 43px; text-align: center;"> 
+
+                    <a href="form.html" ><button class="btn btn-success">BUY NOW</button></a><br>
+                    <p><strong>Purchase a pass for next year and get the rest of this year included FREE!</strong></p>
+                    <ul>
+                        <li>Valid immediately, through 12/31/2020</li>
+                        <li>Includes the Unlimited Wristband on each operating day
+                            <ul>
+                                <li>Unlimited Rides</li>
+                                <li>Unlimited Attractions</li>
+                                <li>Unlimited Video Games</li>
+                            </ul>                          
+                        </li>
+                        <li>Parking is always free for MAP's guests</li>
+                        <li>Non-transferable, non-refundable.</li>
+                        <li>Premium Benefits include:
+                            <ul>
+                                <li>20% off all food and drink purchased in the park</li>
+                                <li>20% off all merchandise purchased in the park</li>
+                                <li>20% off up to 6 friends' wristbands per visit</li>
+                            </ul>
+                        </li>
+                        <li>Non-transferable, non-refundable.</li>
+                        <li><a href="rules.html" style="text-decoration: underline; color: black;">Full terms and conditions: www.merciadoamusementpark.com/pass</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="background-color: yellow;">
+                <img class="card-img-top" src="images/membership.png" >
+                <div class="card-body">
+                    <h4 class="card-title"><b>Premium Membership</b></h4>
+                    <p class="card-text">
+                        Registration now
+                    </p>
+                    <p class="card-text"><strong>Number of Members</strong></p>
+                    <select>
+                        <option>1 Member x $6.99/Month</option>
+                        <option>2 Member x $6.99/Month</option>
+                        <option>3 Member x $6.99/Month</option>
+                        <option>4 Member x $6.99/Month</option>
+                        <option>5 Member x $6.99/Month</option>
+                        <option>6 Member x $6.99/Month</option>
+                        <option>7 Member x $6.99/Month</option>
+                        <option>8 Member x $6.99/Month</option>
+                        <option>9 Member x $6.99/Month</option>
+                        <option>10 Member x $6.99/Month</option>
+                    </select>
+                    <p class="card-text"><strong>One-Time Signup Fees</strong></p>
+                    <select><option>+ $14.99 One-Time Signup Fees</option></select>
+                    <hr>
+                    <input type="number" min="1" style="width: 50px;height: 43px; text-align: center;"> 
+
+                    <a href="form.html" ><button class="btn btn-success">BUY NOW</button></a><br>
+
+                    <ul>
+                        <li>Valid for as long as the membership remains active</li>
+                        <ul>
+                            <li>Cancel any time after the minimum term of 12 months</li>
+                        </ul>
+                    </ul>
+                    <p><strong>Purchase a pass for next year and get the rest of this year included FREE!</strong></p>
+                    <ul>
+                        <li>Valid immediately, through 12/31/2020</li>
+                        <li>Includes the Unlimited Wristband on each operating day
+                            <ul>
+                                <li>Unlimited Rides</li>
+                                <li>Unlimited Attractions</li>
+                                <li>Unlimited Video Games</li>
+                            </ul>                          
+                        </li>
+                        <li>Parking is always free for MAP's guests</li>
+                        <li>Non-transferable, non-refundable.</li>
+                        <li>Premium Benefits include:
+                            <ul>
+                                <li>20% off all food and drink purchased in the park</li>
+                                <li>20% off all merchandise purchased in the park</li>
+                                <li>20% off up to 6 friends' wristbands per visit</li>
+                            </ul>
+                        </li>
+                        <li>Non-transferable, non-refundable.</li>
+                        <li><a href="rules.html" style="text-decoration: underline; color: black;">Full terms and conditions: www.merciadoamusementpark.com/pass</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Pricing at the Gate -->
+<div id="gate">
+    <div class="section-title">Pricing at the Gate</div>
+        <div class="container">
+            <div class="row">
+               
+                  <h2><b>Unlimited Wristband: $22.99</b></h2>
+                  <h3><b>(Discounted From Full Price Of $25.99 Until 15/1/2020)</b></h3>
+                  <p>Unlimited FUN: All attractions are included for the entire operating day -  Switchback Roller Coaster, Ed's Speed Shop Multi-Level GoKart Track, Parachute Drop, Dizzy Toucan, Trampoline Thing, Rock Wall, Silo Climb, Maxflight Simulator, Jungle Playground, Main Building Arcade on Free Play, Rock n' Roll Arcade on Free Play, Mad Raft*, Viper*, and Viper's Tail*.</p>
+                  <ul>
+                      <li><b>Under 42" Tall</b> - $17.99 (Height Measured at the Gate)</li>
+                      <li><b>Senior Citizens (55+)</b> - $17.99 (ID Required)</li>
+                      <li><b>Military, Police , Firefighters, Teachers & Their Dependents </b>- 10% Off Gate Price, ID Required</li>
+                      <li><b>Last Three Hours of Any Operating Day</b> - $15.99</li>
+                  </ul>
+                </div>
+            
+           
+                <h2><b>Other Admission Options Available At The Gate</b></h2>
+                <p><b>Free Walk-In Admission</b> - Free Walk-In Admission is only available to adults and to children ages 2 and under. This option is not available to children ages 3-15. Free walk-in admission does not include any rides, video games, or attractions, and is only available to those who are accompanying or joining a paid person. A $5.99 GoKart Driver Band may also be purchased by an adult to drive children that are not yet tall enough to drive on their own. Ride tickets may also be purchased for $4.62 per ride.</p>
+                <p><b>Indoor Wristband </b>- $17.99 - Includes admission into the park with unlimited use of the following indoor attractions: Bungee Trampoline, MaxFlight Simulator, Indoor Rock Wall, Jungle Playground, Main Building Arcade on Free Play, Rock n’ Roll Arcade on Free Play. Not available for purchase online. Does not include any other rides or attractions.</p>
+                <p><i>*Water rides are seasonal. For hours, see zdtamusement.com/hours</i></p>
+            </div>
+       
+     </div>
+</div>
+
+<!-- Video Game Arcade -->
+<div id="game">
+<div class="section-title">Video Game Arcade</div>
+    <div class="galleryContainer">
+        <div class="slideShowContainer">
+            <div id="playPause" onclick="playPauseSlides()"></div>
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+            <div class="imageHolder">
+                <img src="images/game1.png">
+                <p class="captionText">Merciado Amusement Park </p>
+            </div>
+            <div class="imageHolder">
+                <img src="images/game2.png">
+                <p class="captionText">Merciado Amusement Park</p>
+            </div>
+            <div class="imageHolder">
+                <img src="images/game3.png">
+                <p class="captionText">Merciado Amusement Park</p>
+            </div>
+        </div>  
+    <div id="dotsContainer"></div>
+  </div>
+</div>
+<hr class="my-2">
+<!-- Contacts Us -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.twitter.com>"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.google.com"><i class="fab fa-google-plus"></i></a>
+            <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer -->
+<footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="images/logopark.png" width="30%" height="30%">
+                    <hr class="light">
+                    <p><a class="text-decoration-none text-dark" href="tel:0702402434"><i class="fas fa-mobile-alt"></i> 0702 402 434</a></p>
+                    <a href="mail"></a>
+                    <address>
+                        <p class="text-dark"><i class="far fa-envelope"></i><span> MerciadoAmusementpark@gmail.com</span></p>
+                        <p class="text-dark"><i class="fas fa-map-marker-alt"></i><span> 6 Le Loi street , Thua Thien Hue , Vietnam</span></p>
+                    </address>
+                    
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Working hours</h5>
+                    <hr class="light">
+                    <p>Monday-Friday : 10am - 22pm</p>
+                    <p>Weekend: 8am - 22pm</p>
+
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>SiteMap</h5>
+                    <hr class="light">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                        <li><a href="entertainment.html"><i class="fas fa-parachute-box"></i> ENTERTAINMENT</a></li>
+                        <li><a href="restaurant.html"><i class="fas fa-utensils"></i> RESTAURANTS</a></li>
+                        <li><a href="ticket.html"><i class="fas fa-ticket-alt"></i> TICKETS & PRICE</a></li>
+                        <li><a href="gallery.html"><i class="far fa-images"></i> GALLERY</a></li>
+                        <li><a href="contact.html"><i class="far fa-address-card"></i> CONTACT</a></li>
+                    </ul>
+                   
+                    
+                </div>
+
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h6>Copyright&copy;TNT All right reserved.  Hotline: 1800 1277</h5>
+                    </div>
+                </div>
+            </div>
+</footer>
+<script type="text/javascript" src="js/myScript.js"></script>
+<script type="text/javascript" src="js/sale.js"></script>
+</body>
+</html>

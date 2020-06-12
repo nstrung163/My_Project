@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 13px;
+	width: 100%;
+	margin: 0px auto;
+}
+p
+{
+	margin: 0.75rem 0;
+}
+#menu_top {
+	display: flex;
+	position: sticky;
+	top: 0;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 0.1rem;
+	background: white;
+	color: #fff;
+}
+#menu_top ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+#menu_top ul li a{
+  color:#fff;
+  padding: 0.75rem;  /* padding và margin rất quan trọng để canh lề cho li a chuẩn form , lề trái và phải tùy chọn*/
+  margin: 0 0.25rem;
+  position:relative;
+}
+#menu_top ul li a {
+  color: black;
+  text-decoration:none;
+  display:block; /*Để khi rê chuột vào sẽ full ô và khi rê chuột vào ds dưới a sẽ hiện ra đẹp có căn chỉnh*/
+}
+#menu_top ul li a:hover { /* Điều chỉnh background và font chữ khi ta nhấn vào */
+  background:white;
+  color: #c59d5f; 
+} 
+#menu_top ul li > .sub-menu { /*Để ẩn các li ở dưới */
+  display:none;
+  position : absolute;
+}
+#menu_top ul li:hover .sub-menu{ /*Rê chuột vào sẽ hiển thị */
+  display:block;
+}
+#menu_top .active {
+	border-bottom:  1px solid black;
+}
+#banner_datban  {
+	font-family: 'Bilbo Swash Caps', cursive;
+	width: 100%;
+	height: 250px;
+	background-color: #515150;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: white;
+	font-size: 28px;
+	background-color: rgba(0,0,0,0.8); /* Chỉnh màu cho đậm nhạt */
+
+}
+#imghoptac img {
+	width: 100%;
+	min-height: 200px;
+	float: left;
+	height: auto;
+	border-bottom: 10px solid white;
+	border-top: 50px solid white;
+}
+#footer {
+	background: #D32329;
+	font-size: 16px;
+	line-height: 2.8;
+	color: white;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	clear:left;
+	line-height: 150px; /* Đặt line-height bằng đúng height thì nó text nó sẽ nằm ở chính giữa */
+}
+#footer a{
+	text-decoration: none;
+	color:#c59d5f;
+}
+
+/*Đặt bàn*/
+#main {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-align: center;	
+	font-size: 16px;
+	border-top: 100px solid white;
+}
+#main img {
+	width: 600px;
+	height: 350px;
+}
+#main #left {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-align: center;
+	width: 50%;
+	color: #515166;
+	min-height: 500px;
+	float: left;
+	line-height: 1.8;
+	font-size: 16px;
+}
+#main #left h2{
+	font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase; /* In hoa chữ cái */
+    font-size: 1.75rem; /* Cỡ chữ cho size lớn hay bé */
+	color: #ff0000;
+	text-align: center;
+	font-weight: 500;
+	border-bottom: 5px solid white;
+	margin-bottom: 24px;
+}
+
+#main #left p {
+	margin-bottom: 24px;
+}
+#main #left button:hover { /* Rê chuột vào thì sẽ hiện ra background màu */
+	background-color:#262526;
+}
+#main #left button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 5px;
+}
+#main #right {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-align: center;
+	width: 50%;
+	color: #515166;
+	min-height: 500px;
+	float: left;
+	line-height: 1.8;
+	font-size: 16px;
+
+}
+#main #right h2{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase; /* In hoa chữ cái */
+    font-size: 1.75rem; /* Cỡ chữ cho size lớn hay bé */
+	color: #ff0000;
+	text-align: center;
+	font-weight: 500;
+	border-bottom: 8px solid white;
+	margin-bottom: 24px;
+}
+#main #right p {
+	margin-bottom: 24px;
+}
+#main #right button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 5px;
+}
+#main #right button:hover { /* Rê chuột vào thì sẽ hiện ra background màu */
+	background-color:#262526;
+}
+/***********************************************************************************************/

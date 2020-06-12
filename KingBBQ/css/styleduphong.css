@@ -1,0 +1,307 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 13px;
+	width: 100%;
+	margin: 0px auto;
+
+}
+
+#menu_top ul{
+  list-style-type: none;
+  background: #262526;
+  text-align: center;
+}
+#menu_top ul li {
+  color:#f1f1f1;
+  display: inline-table;
+  width: 140px;
+  height:70px;
+  line-height:70px;
+  position:relative;
+}
+#menu_top ul li a {
+  color: white;
+  text-decoration:none;
+  display:block; /*Để khi rê chuột vào sẽ full ô */
+}
+#menu_top ul li a:hover {
+  background:#f1f1f1;
+  color: #333;
+} 
+#menu_top ul li > .sub-menu { /*Để ẩn các li ở dưới */
+  display:none;
+  position : absolute;
+}
+#menu_top ul li:hover .sub-menu{ /*Rê chuột vào sẽ hiển thị */
+  display:block;
+}
+#menu_top ul li a .active 
+{
+	border-bottom: 2px solid #c59d5f;
+}
+#Banner img {
+	width: 100%;
+	height: auto;
+	border-bottom:  50px solid white;
+}
+#concept #left{
+
+	text-align: center;
+	line-height: 2.8;
+	color: #515166;
+	font-size: 16px;
+	width: 50%;
+	min-height: 400px;
+	float: left; /* Chia ra 2 ở phần concept */
+}
+}
+#concept #left h1 {
+	font-size: 80 ;
+}
+#concept {
+	border-bottom: 50px solid white;
+}
+#concept #left h1{
+	text-align: center;
+}
+#concept #left a{
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	color: #c59d5f;
+	border-bottom: 2px solid #c59d5f;
+}
+#concept #left button { 
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    text-align: center;
+
+}
+
+#concept #right img {
+	width: 50%;
+	min-height: 300px;
+	height: auto;
+}
+#imgfood img{
+	width: 100%;
+	min-height: 200px;
+	height: auto;
+	border-bottom: 50px solid white;
+
+}
+#menu #menuleft img{
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	height: auto;
+	border-bottom: 50px solid white ;
+ /* Chia ra 2 ở phần concept */
+}
+#menu #menuright  {
+	line-height: 2.8;
+	color: #515166;
+	font-size: 16px;
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	text-align: center;
+
+}
+#menu #menuright button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 3px;
+}
+
+#imgrestaurants img{
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	border-bottom: 50px solid white ;
+}
+#restaurants #rleft{
+	text-align: center;
+	line-height: 2.8;
+	font-size: 16px;
+	color: #515166;
+	width: 50%;
+	min-height: 300px;
+	float: left; /* Chia ra 2 như ở phần concept */
+}
+#restaurants #rleft button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 3px;	
+}
+#restaurants #rright img {
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	height: auto;
+	border-bottom: 50px solid white;
+}
+#imgfranchise img{
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	float: left;
+	border-bottom: 50px solid white ;
+}
+#franchise #fleft img
+{
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	height: auto;
+	border-bottom:  50px solid white;
+}
+#franchise #fright{
+	font-size: 16px;
+	text-align: center;
+	line-height: 2.8;
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	color: #515166;
+	border-bottom:2px solid #d8d8d8;
+}
+#franchise #fright button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-bottom: 24px;
+}
+#imghoptac img {
+
+	width: 100%;
+	min-height: 200px;
+	float: left;
+	height: auto;
+	border-bottom: 10px solid white;
+}
+
+#footer {
+	background: #D32329;
+	font-size: 16px;
+	line-height: 2.8;
+	color: white;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	clear:left;
+	line-height: 150px; /* Đặt line-height bằng đúng height thì nó text nó sẽ nằm ở chính giữa */
+}
+#footer a{
+	text-decoration: none;
+	color:#c59d5f;
+}
+#banner_concept img {
+	width: 100%;
+	height: auto; /*để tránh vỡ ảnh và căn chỉnh không đúng */
+	border-bottom: 50px solid white;
+}
+/*Concept*/
+#main {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-align: center;	
+	font-size: 16px;
+	margin-bottom: 24px;
+}
+#main #left {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-align: center;
+	width: 50%;
+	color: #515166;
+	min-height: 600px;
+	float: left;
+	line-height: 1.8;
+	font-size: 16px;
+}
+#main #left h1{
+    font-family: "Source Sans Pro", Georgia, serif;
+    text-transform: uppercase; /* In hoa chữ cái */
+    font-size: 2rem; /* Cỡ chữ cho size lớn hay bé */
+	color: #ff0000;
+	text-align: center;
+	font-weight: 500;
+	border-bottom: 8px solid white;
+	margin-bottom: 24px;
+}
+
+#main #left p {
+	margin-bottom: 24px;
+}
+#main #left button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 3px;
+}
+#main #right {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-align: center;
+	width: 50%;
+	color: #515166;
+	min-height: 600px;
+	float: left;
+	line-height: 1.8;
+	font-size: 16px;
+
+}
+#main #right h1{
+    font-family: "Source Sans Pro", Georgia, serif;
+    text-transform: uppercase; /* In hoa chữ cái */
+    font-size: 2rem; /* Cỡ chữ cho size lớn hay bé */
+	color: #ff0000;
+	text-align: center;
+	font-weight: 500;
+	border-bottom: 8px solid white;
+	margin-bottom: 24px;
+}
+#main #right p {
+	margin-bottom: 24px;
+}
+#main #right button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 3px;
+}

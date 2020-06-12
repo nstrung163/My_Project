@@ -1,0 +1,292 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size: 13px;
+	width: 100%;
+	margin: 0px auto;
+}
+p
+{
+	margin: 0.75rem 0;
+}
+#menu_top {
+	display: flex;
+	position: sticky;
+	top: 0;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 0.1rem;
+	background: black;
+	color: #fff;
+}
+#menu_top ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+#menu_top ul li a{
+  color:#fff;
+  padding: 0.75rem;  /* padding và margin rất quan trọng để canh lề cho li a chuẩn form , lề trái và phải tùy chọn*/
+  margin: 0 0.25rem;
+  position:relative;
+}
+#menu_top ul li a {
+  color: white;
+  text-decoration:none;
+  display:block; /*Để khi rê chuột vào sẽ full ô và khi rê chuột vào ds dưới a sẽ hiện ra đẹp có căn chỉnh*/
+}
+#menu_top ul li a:hover { /* Điều chỉnh background và font chữ khi ta nhấn vào */
+  background:black;
+  color: #c59d5f; 
+} 
+#menu_top ul li > .sub-menu { /*Để ẩn các li ở dưới */
+  display:none;
+  position : absolute;
+}
+#menu_top ul li:hover .sub-menu{ /*Rê chuột vào sẽ hiển thị */
+  display:block;
+}
+#menu_top .active {
+	border-bottom:  1px solid white;
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure{ /* Dồn slide lại 1 chỗ */ 
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left; /* Dồn chung 1 nơi nhưng bị lòi ra thụt vào khi ảnh k trùng size */
+	border-bottom: 200px solid white;
+
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%
+	}
+	50%{
+		left: -200%;
+	}
+	70% {
+		left:  -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	85% {
+		left: -300%;
+	}
+	95% {
+		left: -400%
+	}
+	100% {
+		left: -400%;
+	}
+}
+#concept #left{
+	text-align: center;
+	line-height: 2.8;
+	color: #515166;
+	font-size: 16px;
+	width: 50%;
+	min-height: 400px;
+	float: left; /* Chia ra 2 ở phần concept */
+}
+#concept #left p {
+	margin-bottom: 24px; /* Canh chỉnh khoảng cách giữa các p */
+}
+}
+#concept #left h1 {
+	font-size: 80 ;
+}
+#concept #left a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #c59d5f;
+	border-bottom: 2px solid #c59d5f;
+}
+#concept #left button { 
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 5px; /* Bo viền button */
+}
+#concept #left button:hover {
+	background-color:#262526;
+}
+#concept #right img {
+	width: 50%;
+	min-height: 300px;
+	height: auto;
+}
+#concept {
+	border-bottom: 125px solid white;
+}
+#imgfood img{
+	width: 100%;
+	min-height: 200px;
+	height: auto;
+	border-bottom: 50px solid white;
+
+}
+#menu #menuleft img{
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	height: auto;
+	border-bottom: 50px solid white ;
+ /* Chia ra 2 ở phần concept */
+}
+#menu #menuright  {
+	line-height: 2.8;
+	color: #515166;
+	font-size: 16px;
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	text-align: center;
+
+}
+#menu #menuright button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 5px;
+}
+#menu #menuright button:hover {
+	background-color:#262526;
+}
+}
+#imgrestaurants img{
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	border-bottom: 50px solid white ;
+}
+#restaurants #rleft{
+	text-align: center;
+	line-height: 2.8;
+	font-size: 16px;
+	color: #515166;
+	width: 50%;
+	min-height: 300px;
+	float: left; /* Chia ra 2 như ở phần concept */
+}
+#restaurants #rleft button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-radius: 5px;	
+}
+#restaurants #rleft button:hover {
+	background-color:#262526;	
+}
+#restaurants #rright img {
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	height: auto;
+	border-bottom: 50px solid white;
+}
+#imgfranchise img{
+	width: 100%;
+	min-height: 300px;
+	height: auto;
+	float: left;
+	border-bottom: 100px solid white ;
+}
+#franchise #fleft img
+{
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	height: auto;
+	border-bottom:  100px solid white;
+}
+#franchise #fright{
+	font-size: 16px;
+	text-align: center;
+	line-height: 2.8;
+	width: 50%;
+	min-height: 300px;
+	float: left;
+	color: #515166;
+	border-bottom:2px solid #d8d8d8;
+}
+#franchise #fright button {
+	background-color:  #c59d5f;
+    padding: 12px 30px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    border-bottom: 24px;
+    border-radius: 5px;
+}
+#franchise #fright button:hover
+{
+	background-color:#262526;
+}
+#imghoptac img {
+
+	width: 100%;
+	min-height: 200px;
+	float: left;
+	height: auto;
+	border-bottom: 10px solid white;
+}
+
+#footer {
+	background: #D32329;
+	font-size: 16px;
+	line-height: 2.8;
+	color: white;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	clear:left;
+	line-height: 150px; /* Đặt line-height bằng đúng height thì nó text nó sẽ nằm ở chính giữa */
+}
+#footer a{
+	text-decoration: none;
+	color:#c59d5f;
+}
+#banner_concept img {
+	width: 100%;
+	height: auto; /*để tránh vỡ ảnh và căn chỉnh không đúng */
+	border-bottom: 50px solid white;
+}
