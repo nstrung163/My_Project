@@ -1,0 +1,3612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Điện Máy Xanh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="../images/favicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div class="container-fluid top-banner">
+      <div class="row">
+        <img
+          src="../images/28_07_2020_14_36_45_1200-44.png"
+          alt="Trả góp"
+          class="mx-auto"
+        />
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="container-fluid">
+          <div class="row">
+            <a class="logo"></a>
+            <div class="provinces-box">
+              <span>Xem giá, tồn kho ở:</span>
+              <a class="province__option">
+                <span class="province">TP. Hồ Chí Minh</span>
+                <i class="fas fa-chevron-down arrow-down"></i>
+              </a>
+            </div>
+            <div class="modal">
+              <div class="modal__overlay"></div>
+              <div class="modal__body">
+                <div class="form__choose">
+                  <button type="button" class="btn-close"></button>
+                  <span class="text-black">Chọn tỉnh thành: </span>
+                  <select name="province-choose" id="form__choose--province">
+                    <option>TP. Hồ Chí Minh</option>
+                    <option value="hue">TP. Huế</option>
+                    <option value="hanoi">TP. Hà Nội</option>
+                  </select>
+                  <div class="form__desc">
+                    <span class="text-blue"
+                      >Chọn đầy đủ địa chỉ nhận hàng
+                    </span>
+                    <p>để biết chính xác thời gian giao</p>
+                  </div>
+                  <select name="province-choose" id="form__choose--province">
+                    <option>Vui lòng chọn Quận/Huyện</option>
+                    <option value="1">Quận 1 </option>
+                    <option value="2">Quận 2 </option>
+                    <option value="3">Quận 3 </option>
+                    <option value="4">Quận 4 </option>
+                    <option value="5">Quận 5 </option>
+                    <option value="6">Quận 6 </option>
+                    <option value="7">Quận 7 </option>
+                    <option value="8">Quận 8 </option>
+                    <option value="9">Quận 9 </option>
+                    <option value="10">Quận 10 </option>
+                    <option value="11">Quận 11 </option>
+                    <option value="12">Quận 12 </option>
+                  </select>
+                  <select
+                    name="province-choose"
+                    id="form__choose--province"
+                    class="form__choose--province-disable"
+                  >
+                    <option>Vui lòng chọn Phường/Xã</option>
+                  </select>
+                  <input
+                    type="text"
+                    id="form__input"
+                    placeholder="Số nhà, tên đường"
+                  />
+                </div>
+                <div id="form__confirm">
+                  <button id="confirm">XÁC NHẬN</button>
+                </div>
+              </div>
+            </div>
+            <div class="search">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Bạn tìm gì..."
+              />
+              <a href="#" class="search__item"></a>
+            </div>
+            <a href="#" id="history-buy">Lịch sử mua hàng</a>
+            <a href="#" id="cart-box"></a>
+            <a href="tel:18001061" class="switchboard"
+              >1800.1061
+              <span>Tổng đài miễm phí</span>
+            </a>
+            <div href="#" class="experience">
+              <h4 class="experience__heading">Kinh nghiệm hay</h4>
+              <span class="experience__desc">& tin khuyến mãi</span>
+              <span><i class="fas fa-sort-down icon-sort-down"></i></span>
+              <span><i class="fas fa-sort-up icon-sort-up"></i></span>
+              <div class="experience__btns">
+                <a href="#" class="experience__btn">Tư vấn chọn mua</a>
+                <a href="#" class="experience__btn">Tin Khuyến mãi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <div class="container-fluid main-navigation">
+          <div class="row">
+            <div class="main-menu">
+              <i class="fas fa-bars main-menu-icon"></i>
+              <span class="main-menu-dm">Danh mục </span>
+              <i class="fas fa-sort-down main-menu-icon-arrow"></i>
+              <span class="main-menu-xtc">Xem tất cả</span>
+            </div>
+            <div class="txt-banner d-flex">
+              <ul class="txt-banner__list">
+                <li>
+                  <a href="/" class="hot-event txt-banner__list--item">
+                    <div class="dot">
+                      <span class="ping"></span>
+                    </div>
+                    <span class="text">Tivi Giảm Lớn 49%</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="txt-banner__list--item bd-left"
+                    >Quạt điều hoà ưu đãi đến 34%</a
+                  >
+                </li>
+                <li>
+                  <a href="/" class="txt-banner__list--item bd-left"
+                    >Bỏ cũ lấy mới máy lọc nước giảm 30%</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <section class="container-fluid mixed-area">
+        <!-- Menu, carousel, hot new  -->
+        <section class="row">
+          <div class="local-nav">
+            <ul class="list-nav-item">
+              <!-- Nav 1 : Tivi, Loa Karaoke -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-tivi"></i>
+                  <a href="/">Tivi</a> ,
+                  <a href="/">Loa Karaoke</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <!-- Sub menu -->
+                  <div class="sub-menu">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>TIVI</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả<i class="fas fa-caret-right"></i
+                        ></a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tivi trả góp 0-1%</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Sony</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Samsung</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">LG</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">TCL</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Từ 32-43 inch</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Từ 44-54 inch</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Dưới 7 triệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tivi cao cấp</a>
+                      </li>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>LOA, ÂM THANH</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả<i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Loa kéo</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Loa thanh (Soundbar)</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Dàn âm thanh</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Cáp HDMI, cáp Tivi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Micro</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 2 : Tủ lạnh, Tủ đông -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-tulanh"></i>
+                  <a href="/">Tủ lanh </a> ,
+                  <a href="/">Tủ đông</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <!-- Sub menu -->
+                  <div class="sub-menu sub-menu-2">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>Tủ lạnh</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả<i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Trả góp 0 - 0.5% <span class="item-new">Mới</span></a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Tủ lạnh từ 150 - 300 lít</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Tủ lạnh từ 300 - 400 lít</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tủ lạnh Side by side</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tủ lạnh Mini</a>
+                      </li>
+                    </ul>
+
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>TỦ ĐÔNG</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Panasonic</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Samsung</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Toshiba</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Từ 8 - 12 triệu</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 3 : Máy giặt, sấy áo quần -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-maygiat"></i>
+                  <a href="/">Máy giặt</a> ,
+                  <a href="/">Sấy áo quần</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+
+                  <!-- Sub menu -->
+                  <div class="sub-menu sub-menu-3">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>Máy giặt</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Đời mới 2020 <span class="item-new">Mới</span></a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Toshiba</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">LG</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Panasonic</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Samsung</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Electrolux</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Aqua</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy giặt cửa ngang (cửa trước)</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy giặt sấy</a>
+                      </li>
+                    </ul>
+
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>Máy sấy áo quần</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Giá dưới 5 triệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Giá từ 5 - 10 triệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Electrolux</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Beko</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Kangaroo</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 4 : Máy lạnh, điều hòa-->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-maylanh"></i>
+                  <a href="/">Máy lạnh </a> ,
+                  <a href="/">Quạt điều hòa</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <!-- Sub menu -->
+                  <div class="sub-menu sub-menu-4">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>Máy lạnh</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Trả góp 0 - 0.5%</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đời mới 2020</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Panasonic</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Daikin</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Samsung</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy lạnh 1 HP</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy lạnh 1.5 HP</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy lạnh Inverter tiết kiệm điện
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy lạnh dưới 7 triệu</a>
+                      </li>
+                    </ul>
+
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>Quạt điều hòa</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Kangaroo</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Daikiosan</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Sunhouse</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Midea</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Delites</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Từ 3 đến 5 triệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Từ 1 đến 3 triệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Quạt mát 15-30m²</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Quạt mát dưới 15m²</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 5: Lọc nước , Máy nước nóng -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-locnuoc"></i>
+                  <a href="/">Lọc nước</a> ,
+                  <a href="/">Máy nước nóng</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <div class="sub-menu sub-menu-5">
+                    <ul class="group">
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy lọc nước RO <span class="item-new">Mới</span></a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Lõi máy lọc nước</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy nước nóng</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Cây nước nóng lạnh</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy nước nóng năng lượng mặt trời</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 6: Điện gia dụng , Quạt -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-dgd"></i>
+                  <a href="/">Điện gia dụng</a> ,
+                  <a href="/">Quạt</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <!-- SUb menu -->
+                  <div class="sub-menu sub-menu-6">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>Gia dụng nhà bếp</strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Nồi cơm điện</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Nồi áp suất</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Nồi lẩu điện</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy xay sinh tố</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy ép trái cây</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy làm sữa đậu nành</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy đánh trứng</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy lạnh Inverter tiết kiệm điện</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy rửa chén <span class="item-new">Mới</span></a
+                        >
+                      </li>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>THIẾT BỊ GIA ĐÌNH</strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Bàn ủi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đèn sưởi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy lọc không khí</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy hút mùi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy hút bụi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Nồi chiên không dầu
+                          <span class="item-new">Mới</span>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đèn bàn học</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đèn bắt muỗi</a>
+                      </li>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>LÀM ĐẸP VÀ CHĂM SÓC CÁ NHÂN</strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy sấy tóc</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy tạo kiểu tóc</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy cắt tóc</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy xông hơi mặt</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy cạo râu</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>CHĂM SÓC MẸ VÀ BÉ</strong>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link"
+                            >Máy hút sữa
+                            <span class="item-new">Mới</span>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link"
+                            >Máy hâm sữa <span class="item-new">Mới</span></a
+                          >
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link"
+                            >Máy tiệt trùng bình sữa
+                            <span class="item-new">Mới</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 7: Đồ dùng gia đình -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-ddgd"></i>
+                  <a href="/">Đồ dùng gia đình</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <!-- SUb menu -->
+                  <div class="sub-menu sub-menu-7">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>PHÒNG ĂN</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Bình đựng nước</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Bình giữ nhiệt</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Chén bát</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đũa - Muỗng</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Ly - Bộ ly</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Bộ ấm trà</a>
+                      </li>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>NHÀ BẾP</strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Nồi, bộ nồi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Chảo chống dính</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Dao, kéo, thớt</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Hộp đựng thực phẩm</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Thau, rổ</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Vá, Sạn</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>VỆ SINH NHÀ CỬA</strong>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Bộ lau nhà</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Kẹp, móc quần áo</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Áo trùm máy giặt</a>
+                        </li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 8: Điện thoại, Laptop, Table -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-dt"></i>
+                  <a href="/">Điện thoại</a>, <a href="/">Laptop </a>,
+                  <a href="/">Tablet </a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <div class="sub-menu sub-menu-8">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>ĐIỆN THOẠI</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">iPhone</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Samsung</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Oppo</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Xiaomi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Điện thoại từ 2 - 4 triệu</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Điện thoại từ 4 - 7 triệu</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Điện thoại trên 13 triệu</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Điện thoại cũ giá rẻ</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Điện thoại trả góp 0-1%</a
+                        >
+                      </li>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>LAPTOP</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Macbook - iMac</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">HP</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Dell</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Asus</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Acer</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Laptop dưới 10 triệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Laptop từ 10 đến 15 triệu</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Laptop cũ giá rẻ</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Laptop trả góp 0-1%</a>
+                      </li>
+                    </ul>
+                    <!-- Group 3 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>TABLET</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">iPad</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Samsung</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Huawei</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Lenovo</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Mobell</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy tính bảng từ 3 - 10 triệu</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy tính bảng trên 10 triệu</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy tính bảng cũ giá rẻ</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy tính bảng trả góp 0-1%</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 9: Máy bộ , màn hình, máy in -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-mb"></i>
+                  <a href="/">Máy bộ</a>, <a href="/">Màn hình</a>,
+                  <a href="/">Máy in </a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <div class="sub-menu sub-menu-9">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>MÁY TÍNH</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy tính nguyên bộ HP</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy tính nguyên bộ Acer</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link"
+                          >Máy tính nguyên bộ Dell</a
+                        >
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>MÁY IN</strong>
+                          <a href="#" class="view-all">
+                            Xem tất cả
+                            <i class="fas fa-caret-right"></i>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Máy in HP</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Máy in Brother</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Máy in Canon</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Mực in</a>
+                        </li>
+                      </ul>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>MÀN HÌNH</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Màn hình Dell</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Màn hình HP</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Màn hình Acer</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Màn hình ASUS</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Màn hình Samsung</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>THIẾT BỊ MẠNG</strong>
+                          <a href="#" class="view-all">
+                            Xem tất cả
+                            <i class="fas fa-caret-right"></i>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link"
+                            >Thiết bị mạng TP-LINK</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link"
+                            >Thiết bị mạng LINKSYS</a
+                          >
+                        </li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- Nav 10: Phụ kiến, Đồng hồ, Vali -->
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-pk"></i>
+                  <a href="/">Phụ kiện</a>, <a href="/">Đồng hồ</a>,
+                  <a href="/">Vali </a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <div class="sub-menu sub-menu-10">
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong
+                          >ĐỒNG HỒ THỜI TRANG
+                          <span class="item-new">Mới</span></strong
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đồng hồ nam</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đồng hồ nữ</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đồng hồ Casio</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đồng hồ Orient</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đồng hồ Citizen</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>ĐỒNG HỒ THÔNG MINH</strong>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Apple Watch</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Samsung</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Huawei</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Xiaomi</a>
+                        </li>
+                      </ul>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>PHỤ KIỆN ĐIỆN THOẠI</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Pin sạc dự phòng</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Cáp sạc</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tai nghe</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Loa nghe nhạc</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Thẻ nhớ</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>PHỤ KIỆN LAPTOP</strong>
+                          <a href="#" class="view-all">
+                            Xem tất cả
+                            <i class="fas fa-caret-right"></i>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">USB</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Ổ cứng</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Chuột</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Bàn phím</a>
+                        </li>
+                      </ul>
+                    </ul>
+                    <!-- Group 3 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>PHỤ KIỆN ĐIỆN MÁY</strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Cáp HDMI, Cáp tivi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Khung treo Tivi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Điều khiển Tivi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Giá đỡ máy giặt</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Loa soundbar</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>VALI</strong>
+                          <a href="#" class="view-all">
+                            Xem tất cả
+                            <i class="fas fa-caret-right"></i>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Sakos</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Stargo</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">22 inch</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">26 inch</a>
+                        </li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item bd-bottom">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-sim"></i>
+                  <a href="/">Sim số, Thẻ cào</a>,
+                  <a href="/">Thu hộ </a>
+                </div>
+                <div class="sub-menu">
+                  <ul class="group"></ul>
+                </div>
+              </li>
+              <!-- Nav 12: Máy cũ, trưng bày -->
+              <li class="nav-item">
+                <div class="sup-menu">
+                  <i class="icon-dmx icon-mc"></i>
+                  <a href="/">Máy cũ, trưng bày</a>
+                  <i class="fas fa-chevron-right icon-right"></i>
+                  <div class="sub-menu sub-menu-12">
+                    <!-- Group 1: -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>TIVI, DÀN LOA ÂM THANH </strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tivi</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Loa Karaoke</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Micro</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Đầu DVD</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>ĐIỆN GIA DỤNG</strong>
+                          <a href="#" class="view-all">
+                            Xem tất cả
+                            <i class="fas fa-caret-right"></i>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Quạt</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Nồi cơm</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Sinh tố/ Xay ép</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Bếp điện</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Bếp gas</a>
+                        </li>
+                      </ul>
+                    </ul>
+                    <!-- Group 2 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>TỦ LẠNH, TỦ ĐÔNG</strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tủ lạnh</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tủ đông</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>MÁY LẠNH, QUẠT ĐIỀU HÒA</strong>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Máy lạnh</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Quạt điều hòa</a>
+                        </li>
+                      </ul>
+                    </ul>
+                    <!-- Group 3 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>MÁY GIẶT, MÁY SẤY</strong>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy giặt</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Máy sấy</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>Máy sấy</strong>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Máy lọc nước</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Máy nước nóng</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Cây nước nóng lạnh</a>
+                        </li>
+                      </ul>
+                    </ul>
+                    <!-- Group 4 -->
+                    <ul class="group">
+                      <li class="group-title">
+                        <strong>PHỤ KIỆN, LOA</strong>
+                        <a href="#" class="view-all">
+                          Xem tất cả
+                          <i class="fas fa-caret-right"></i>
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Pin sạc dự phòng</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Chuột</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Cáp sạc/ Adapter</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Tai nghe</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Phụ kiện điện máy</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" class="item__link">Loa laptop</a>
+                      </li>
+                      <ul class="group">
+                        <li class="group-title">
+                          <strong>VIỄN THÔNG</strong>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Điện thoại</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Máy tính bảng</a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">Laptop</a>
+                        </li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-sale">
+            <div
+              id="myCarousel"
+              class="carousel slide carousel-fade"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="../images/Mung-Sinh-Nhat-690-300-690x300.png"
+                    alt="Tháng sinh nhật "
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="../images/BIG-MG690-300-690x300.png"
+                    alt="Lễ hội máy giặt"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="../images/690-300-690x300-20.png"
+                    alt="Gia dụng đón hè"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="../images/Beko-TL-Pre690-300-690x300.png"
+                    alt="Tủ lạnh Beko"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="../images/10_07_2020_15_02_41_TCL-TV-690-300.png"
+                    alt="Mua TV TCL"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active">
+                  <span class="no-bd">Tháng Sinh Nhật<br />Giảm Đến 49%</span>
+                </li>
+                <li data-target="#myCarousel" data-slide-to="1">
+                  <span>Lễ Hội Máy Giặt<br />Tiết Kiệm Đến 20%</span>
+                </li>
+                <li data-target="#myCarousel" data-slide-to="2">
+                  <span>Gia Dụng Đón Hè<br />Giảm Đến 34%</span>
+                </li>
+                <li data-target="#myCarousel" data-slide-to="3">
+                  <span>Tủ Lạnh Beko<br />250 Suất Giảm 21%</span>
+                </li>
+                <li data-target="#myCarousel" data-slide-to="4">
+                  <span>Mua TV Samsung<br />Giảm Đến 18 Triệu</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="hotnew">
+            <div class="experience-video">
+              <a href="/">
+                <h2 class="experience-video-heading">
+                  Kinh nghiệm hay - Video
+                </h2>
+              </a>
+              <ul>
+                <li>
+                  <a href="/" class="experience-video--link"
+                    >Top 5 Tivi 4K bán chạy nhất 6 tháng đầu năm 2020 tại Điện
+                    máy XANH</a
+                  >
+                </li>
+                <li>
+                  <a href="/" class="experience-video--link"
+                    >Top 10 máy lọc không khí bán chạy nhất 6 tháng đầu năm 2020
+                    tại...</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="img-sale">
+              <img
+                src="../images/26064-260x64.png"
+                alt="Tủ lạnh máy giặt PANASONIC"
+              />
+              <img
+                src="../images/260X64.pngdesk-260x64.png"
+                alt="Tủ lạnh máy giặt LG"
+              />
+              <img
+                src="../images/StickyBannerTCL-2-260x64.png"
+                alt="Tủ lạnh máy giặt TCL"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Promotion in month -->
+      <section class="container-fluid product-promo">
+        <div class="row">
+          <div class="img-label-title">
+            <img
+              class="img-birthday"
+              src="../images/vunggiasocdesk-1200x80.png"
+              alt="Vùng giá sockdeal"
+            />
+          </div>
+          <!-- Carousel product promotions -->
+          <div
+            id="product-promotions"
+            class="carousel slide"
+            data-interval="1000000"
+          >
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ul class="product-promo__list">
+                  <!-- Product 1 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img src="../images/tcl-40s6500-(5).jpg" alt="Tivi" />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">
+                        TCL Android TV 40"
+                        <span class="new-2020">Mới 2020</span>
+                      </p>
+                      <strong class="product-price-new">5.990.000₫</strong>
+                      <span class="product-price-old"> 6.990.000</span>
+                      <span class="percent-sale">(-14%)</span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>4.2</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">70 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 2 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/panasonic-nr-ba229pkvn-300x300.jpg"
+                          alt="Tủ lạnh panasonic"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">
+                        Panasonic Inverter 188 lít
+                        <span class="new-2020">Mới 2020</span>
+                      </p>
+                      <strong class="product-price-new">6.690.000₫</strong>
+                      <span class="price-sale"> Giảm <b>800.000₫</b></span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>2.9</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">11 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 3 -->
+                  <li class="product-promo--item product-promo--item-type2">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                          alt="Máy giặt samsung"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                      <strong class="product-price-old">12.990.000₫ </strong>
+                      <div class="product-price-sale">
+                        <span class="product-sale">
+                          Online giảm <span class="percent-sale">23%</span> còn
+                          :
+                        </span>
+                        <strong class="product-price-new">9.990.000₫</strong>
+                      </div>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.8</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">24 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 4 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/toshiba-ras-h10d2kcvg-v-2-550x160.jpg"
+                          alt="Máy lạnh toshiba"
+                        />
+                      </div>
+                      <div class="img-label qua-ngon"></div>
+                      <p class="product-name">
+                        Toshiba Inverter 1 HP
+                        <span class="new-2020">Mới 2020</span>
+                      </p>
+                      <strong class="product-price-new">9.690.000₫</strong>
+                      <span class="price-sale">
+                        Giảm <b>500.000₫</b> và quà <b>800.000₫</b>
+                      </span>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.8</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">156 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 5 -->
+                  <li class="product-promo--item product-promo--item-type2">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/sony-kd-43x8000g-(4).jpg"
+                          alt="Tivi sony"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">Sony Android TV 4K 43"</p>
+                      <strong class="product-price-old">12.400.000₫ </strong>
+                      <div class="product-price-sale">
+                        <span class="product-sale">
+                          Online giảm <span class="percent-sale">22%</span> còn
+                          :
+                        </span>
+                        <strong class="product-price-new"> 9.600.000₫ </strong>
+                      </div>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.9</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">77 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 6 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                          alt="Máy giặt panasonic"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/boculaymoilabel.png"
+                          alt="Bỏ cũ lấy mới"
+                        />
+                      </div>
+                      <p class="product-name">
+                        Panasonic 9 Kg <span class="new-2020"></span>
+                      </p>
+                      <strong class="product-price-new">6.890.000₫</strong>
+                      <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>4.3</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">176 đánh giá</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="product-promo__list">
+                  <!-- Product 1 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/panasonic-nr-ba229pkvn-300x300.jpg"
+                          alt="Tủ lạnh panasonic"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">
+                        Panasonic Inverter 188 lít
+                        <span class="new-2020">Mới 2020</span>
+                      </p>
+                      <strong class="product-price-new">6.690.000₫</strong>
+                      <span class="price-sale"> Giảm <b>800.000₫</b></span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>2.9</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">11 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 2 -->
+                  <li class="product-promo--item product-promo--item-type2">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                          alt="Máy giặt samsung"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                      <strong class="product-price-old">12.990.000₫ </strong>
+                      <div class="product-price-sale">
+                        <span class="product-sale">
+                          Online giảm <span class="percent-sale">23%</span> còn
+                          :
+                        </span>
+                        <strong class="product-price-new">9.990.000₫</strong>
+                      </div>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.8</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">24 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 3 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/toshiba-ras-h10d2kcvg-v-2-550x160.jpg"
+                          alt="Máy lạnh toshiba"
+                        />
+                      </div>
+                      <div class="img-label qua-ngon"></div>
+                      <p class="product-name">
+                        Toshiba Inverter 1 HP
+                        <span class="new-2020">Mới 2020</span>
+                      </p>
+                      <strong class="product-price-new">9.690.000₫</strong>
+                      <span class="price-sale">
+                        Giảm <b>500.000₫</b> và quà <b>800.000₫</b>
+                      </span>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.8</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">156 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 4 -->
+                  <li class="product-promo--item product-promo--item-type2">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/sony-kd-43x8000g-(4).jpg"
+                          alt="Tivi sony"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">Sony Android TV 4K 43"</p>
+                      <strong class="product-price-old">12.400.000₫ </strong>
+                      <div class="product-price-sale">
+                        <span class="product-sale">
+                          Online giảm <span class="percent-sale">22%</span> còn
+                          :
+                        </span>
+                        <strong class="product-price-new"> 9.600.000₫ </strong>
+                      </div>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.9</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">77 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 5 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                          alt="Máy giặt panasonic"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/boculaymoilabel.png"
+                          alt="Bỏ cũ lấy mới"
+                        />
+                      </div>
+                      <p class="product-name">
+                        Panasonic 9 Kg <span class="new-2020"></span>
+                      </p>
+                      <strong class="product-price-new">6.890.000₫</strong>
+                      <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>4.3</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">176 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 6 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/tcl-32s6500-550x340.jpg"
+                          alt="Máy giặt panasonic"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/boculaymoilabel.png"
+                          alt="Bỏ cũ lấy mới"
+                        />
+                      </div>
+                      <p class="product-name">
+                        TCL Android TV 32 <span class="new-2020"></span>
+                      </p>
+                      <strong class="product-price-new">4.690.000₫</strong>
+                      <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>4.3</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">176 đánh giá</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="product-promo__list">
+                  <!-- Product 1 -->
+                  <li class="product-promo--item product-promo--item-type2">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                          alt="Máy giặt samsung"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                      <strong class="product-price-old">12.990.000₫ </strong>
+                      <div class="product-price-sale">
+                        <span class="product-sale">
+                          Online giảm <span class="percent-sale">23%</span> còn
+                          :
+                        </span>
+                        <strong class="product-price-new">9.990.000₫</strong>
+                      </div>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.8</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">24 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 2 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/toshiba-ras-h10d2kcvg-v-2-550x160.jpg"
+                          alt="Máy lạnh toshiba"
+                        />
+                      </div>
+                      <div class="img-label qua-ngon"></div>
+                      <p class="product-name">
+                        Toshiba Inverter 1 HP
+                        <span class="new-2020">Mới 2020</span>
+                      </p>
+                      <strong class="product-price-new">9.690.000₫</strong>
+                      <span class="price-sale">
+                        Giảm <b>500.000₫</b> và quà <b>800.000₫</b>
+                      </span>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.8</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">156 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 3 -->
+                  <li class="product-promo--item product-promo--item-type2">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/sony-kd-43x8000g-(4).jpg"
+                          alt="Tivi sony"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/online-giảm-sốc-1x.png"
+                          alt="Gia soc"
+                        />
+                      </div>
+                      <p class="product-name">Sony Android TV 4K 43"</p>
+                      <strong class="product-price-old">12.400.000₫ </strong>
+                      <div class="product-price-sale">
+                        <span class="product-sale">
+                          Online giảm <span class="percent-sale">22%</span> còn
+                          :
+                        </span>
+                        <strong class="product-price-new"> 9.600.000₫ </strong>
+                      </div>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.9</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">77 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 4 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                          alt="Máy giặt panasonic"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/boculaymoilabel.png"
+                          alt="Bỏ cũ lấy mới"
+                        />
+                      </div>
+                      <p class="product-name">
+                        Panasonic 9 Kg <span class="new-2020"></span>
+                      </p>
+                      <strong class="product-price-new">6.890.000₫</strong>
+                      <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>4.3</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">176 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 5 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/tcl-32s6500-550x340.jpg"
+                          alt="Máy giặt panasonic"
+                        />
+                      </div>
+                      <div class="img-label">
+                        <img
+                          src="../images/boculaymoilabel.png"
+                          alt="Bỏ cũ lấy mới"
+                        />
+                      </div>
+                      <p class="product-name">
+                        TCL Android TV 32 <span class="new-2020"></span>
+                      </p>
+                      <strong class="product-price-new">4.690.000₫</strong>
+                      <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                    </a>
+
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>4.3</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">176 đánh giá</span>
+                    </div>
+                  </li>
+                  <!-- Product 6 -->
+                  <li class="product-promo--item">
+                    <a href="/">
+                      <div class="img-container">
+                        <span class="tra-gop">Trả góp 0%</span>
+                        <img
+                          src="../images/kangaroo-kg-265nc1-300x300.jpg"
+                          alt="Máy lạnh toshiba"
+                        />
+                      </div>
+                      <div class="img-label qua-ngon"></div>
+                      <p class="product-name">
+                        Tủ đông Kangaroo 140 lít KG 265NC1
+                      </p>
+                      <strong class="product-price-new">5.990.000₫</strong>
+                      <span class="price-sale"> Giảm <b>500.000₫</b> </span>
+                    </a>
+                    <div class="rating">
+                      <span class="rating__start">
+                        <b>3.8</b>/5
+                        <i class="fas fa-star"></i>
+                      </span>
+                      <span class="sl-rating">156 đánh giá</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a
+              class="carousel-control-prev"
+              href="#product-promotions"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="btn-prev" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#product-promotions"
+              role="button"
+              data-slide="next"
+            >
+              <span class="btn-next" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Hot promotion in day -->
+      <section class="container-fluid hot-promotion-in-day">
+        <div class="title-promotion">Khuyến mãi HOT mỗi ngày</div>
+        <div class="group-promo-tabs">
+          <ul class="nav-tabs">
+            <li class="nav-tab-item active">
+              <a href="#tab-1" class="nav-link">Nổi bật</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-2" class="nav-link">Máy lạnh</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-3" class="nav-link">Điện thoại, laptop</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-4" class="nav-link">Tivi, Loa Karaoke</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-5" class="nav-link">Tủ lạnh, tủ đông</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-6" class="nav-link">Máy giặt</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-7" class="nav-link">Máy lọc nước</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-8" class="nav-link">Điện gia dụng</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-9" class="nav-link">Đồ dùng nhà bếp</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-10" class="nav-link">Phụ kiện</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-11" class="nav-link">Đồng hồ</a>
+            </li>
+            <li class="nav-tab-item">
+              <a href="#tab-12" class="nav-link">Máy nước nóng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div class="tab-product active" id="tab-1">
+            <ul class="list-promotion">
+              <!-- Product 1 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ua50tu8100--1-550x340.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Smart TV 4K 50"</p>
+                  <strong class="product-price-old">15.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">20%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 12.200.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 2 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/panasonic-nr-ba229pkvn-300x300.jpg"
+                      alt="Tủ lạnh panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">
+                    Panasonic Inverter 188 lít
+                    <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">6.690.000₫</strong>
+                  <span class="price-sale"> Giảm <b>800.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>2.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">11 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 3 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/toshiba-ras-h10d2kcvg-v-2-550x160.jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <div class="img-label qua-ngon"></div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">9.690.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>500.000₫</b> và quà <b>800.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 4 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/sony-kd-43x8000g-(4).jpg"
+                      alt="Tivi sony"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Sony Android TV 4K 43"</p>
+                  <strong class="product-price-old">12.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">22%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 9.600.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">77 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 5 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 6 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 7 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 8 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-21-208863-600x600 .jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">13.490.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>2.700.000₫</b> và quà <b>100.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.6</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 9 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-nuoc-ro-delites-des0520ro-5-loi-xam-nau-1-300x300.jpg"
+                      alt="Máy lọc nước"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc nước R.O Delites DES0520RO 5 lõi
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 10 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-khong-khi-midea-kj20fe-bd-14-300x300.jpg"
+                      alt="Máy lọc không khí"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Giảm giá sock"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc không khí Midea KJ20FE-BD
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">3.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.000.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 11 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 12 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/iphone-xs-gold-600x600-2-600x600.jpg"
+                      alt="IP XS 64GB"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">19.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>3.500.000₫</b> </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.4</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 1 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ua50tu8100--1-550x340.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Smart TV 4K 50"</p>
+                  <strong class="product-price-old">15.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">20%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 12.200.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 2 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/panasonic-nr-ba229pkvn-300x300.jpg"
+                      alt="Tủ lạnh panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">
+                    Panasonic Inverter 188 lít
+                    <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">6.690.000₫</strong>
+                  <span class="price-sale"> Giảm <b>800.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>2.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">11 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 3 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/toshiba-ras-h10d2kcvg-v-2-550x160.jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <div class="img-label qua-ngon"></div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">9.690.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>500.000₫</b> và quà <b>800.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 4 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/sony-kd-43x8000g-(4).jpg"
+                      alt="Tivi sony"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Sony Android TV 4K 43"</p>
+                  <strong class="product-price-old">12.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">22%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 9.600.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">77 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 5 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 6 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 7 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 8 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-21-208863-600x600 .jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">13.490.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>2.700.000₫</b> và quà <b>100.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.6</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 9 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-nuoc-ro-delites-des0520ro-5-loi-xam-nau-1-300x300.jpg"
+                      alt="Máy lọc nước"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc nước R.O Delites DES0520RO 5 lõi
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 10 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-khong-khi-midea-kj20fe-bd-14-300x300.jpg"
+                      alt="Máy lọc không khí"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Giảm giá sock"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc không khí Midea KJ20FE-BD
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">3.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.000.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 11 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 12 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/iphone-xs-gold-600x600-2-600x600.jpg"
+                      alt="IP XS 64GB"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">19.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>3.500.000₫</b> </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.4</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-product" id="tab-2">
+            <ul class="list-promotion">
+              <!-- Product 1 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 2 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/panasonic-nr-ba229pkvn-300x300.jpg"
+                      alt="Tủ lạnh panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">
+                    Panasonic Inverter 188 lít
+                    <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">6.690.000₫</strong>
+                  <span class="price-sale"> Giảm <b>800.000₫</b></span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>2.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">11 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 3 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/toshiba-ras-h10d2kcvg-v-2-550x160.jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <div class="img-label qua-ngon"></div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">9.690.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>500.000₫</b> và quà <b>800.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 4 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/sony-kd-43x8000g-(4).jpg"
+                      alt="Tivi sony"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Sony Android TV 4K 43"</p>
+                  <strong class="product-price-old">12.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">22%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 9.600.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">77 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 5 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 6 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ua50tu8100--1-550x340.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Smart TV 4K 50"</p>
+                  <strong class="product-price-old">15.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">20%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 12.200.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 7 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 8 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-21-208863-600x600 .jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">13.490.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>2.700.000₫</b> và quà <b>100.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.6</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 9 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-nuoc-ro-delites-des0520ro-5-loi-xam-nau-1-300x300.jpg"
+                      alt="Máy lọc nước"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc nước R.O Delites DES0520RO 5 lõi
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 10 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-khong-khi-midea-kj20fe-bd-14-300x300.jpg"
+                      alt="Máy lọc không khí"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Giảm giá sock"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc không khí Midea KJ20FE-BD
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">3.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.000.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 11 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 12 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/iphone-xs-gold-600x600-2-600x600.jpg"
+                      alt="IP XS 64GB"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">19.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>3.500.000₫</b> </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.4</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 1 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ua50tu8100--1-550x340.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Smart TV 4K 50"</p>
+                  <strong class="product-price-old">15.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">20%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 12.200.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 2 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/panasonic-nr-ba229pkvn-300x300.jpg"
+                      alt="Tủ lạnh panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">
+                    Panasonic Inverter 188 lít
+                    <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">6.690.000₫</strong>
+                  <span class="price-sale"> Giảm <b>800.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>2.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">11 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 3 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/toshiba-ras-h10d2kcvg-v-2-550x160.jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <div class="img-label qua-ngon"></div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP <span class="new-2020">Mới 2020</span>
+                  </p>
+                  <strong class="product-price-new">9.690.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>500.000₫</b> và quà <b>800.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 4 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/sony-kd-43x8000g-(4).jpg"
+                      alt="Tivi sony"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Sony Android TV 4K 43"</p>
+                  <strong class="product-price-old">12.400.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">22%</span> còn :
+                    </span>
+                    <strong class="product-price-new"> 9.600.000₫ </strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.9</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">77 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 5 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 6 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 7 -->
+              <li class="product-promo--item product-promo--item-type2">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/samsung-ww85k54e0ux-sv-10-300x300.jpg"
+                      alt="Máy giặt samsung"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img src="../images/online-giảm-sốc-1x.png" alt="Gia soc" />
+                  </div>
+                  <p class="product-name">Samsung Inverter 8.5 Kg</p>
+                  <strong class="product-price-old">12.990.000₫ </strong>
+                  <div class="product-price-sale">
+                    <span class="product-sale">
+                      Online giảm <span class="percent-sale">23%</span> còn :
+                    </span>
+                    <strong class="product-price-new">9.990.000₫</strong>
+                  </div>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.8</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">24 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 8 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/acer-swift-sf315-52-38yq-i3-8130u-4gb-1tb-156f-win-21-208863-600x600 .jpg"
+                      alt="Máy lạnh toshiba"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">13.490.000₫</strong>
+                  <span class="price-sale">
+                    Giảm <b>2.700.000₫</b> và quà <b>100.000₫</b>
+                  </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>3.6</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 9 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-nuoc-ro-delites-des0520ro-5-loi-xam-nau-1-300x300.jpg"
+                      alt="Máy lọc nước"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc nước R.O Delites DES0520RO 5 lõi
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 10 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-loc-khong-khi-midea-kj20fe-bd-14-300x300.jpg"
+                      alt="Máy lọc không khí"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/online-giảm-sốc-1x.png"
+                      alt="Giảm giá sock"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Máy lọc không khí Midea KJ20FE-BD
+                    <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">3.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.000.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 11 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/may-giat-panasonic-na-f90a4grv-daidien-300x300.jpg"
+                      alt="Máy giặt panasonic"
+                    />
+                  </div>
+                  <div class="img-label">
+                    <img
+                      src="../images/boculaymoilabel.png"
+                      alt="Bỏ cũ lấy mới"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Panasonic 9 Kg <span class="new-2020"></span>
+                  </p>
+                  <strong class="product-price-new">6.890.000₫</strong>
+                  <span class="price-sale"> Giảm <b>1.100.000₫</b></span>
+                </a>
+
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.3</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">176 đánh giá</span>
+                </div>
+              </li>
+              <!-- Product 12 -->
+              <li class="product-promo--item">
+                <a href="/">
+                  <div class="img-container">
+                    <span class="tra-gop">Trả góp 0%</span>
+                    <img
+                      src="../images/iphone-xs-gold-600x600-2-600x600.jpg"
+                      alt="IP XS 64GB"
+                    />
+                  </div>
+                  <p class="product-name">
+                    Toshiba Inverter 1 HP
+                  </p>
+                  <strong class="product-price-new">19.990.000₫</strong>
+                  <span class="price-sale"> Giảm <b>3.500.000₫</b> </span>
+                </a>
+                <div class="rating">
+                  <span class="rating__start">
+                    <b>4.4</b>/5
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="sl-rating">156 đánh giá</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--Image ads -->
+      <section class="container-fluid area-ads">
+        <img
+          class="img-ads"
+          src="./images/stickerKangdesk-394x76.png"
+          alt="Kangaroo"
+        />
+        <img
+          class="img-ads"
+          src="./images/DCNBdesk-394x76.png"
+          alt="Dung cu nha bep"
+        />
+        <img
+          class="img-ads"
+          src="./images/stickerOLOLdesk-394x76.png"
+          alt="The gioi mua hang online"
+        />
+      </section>
+      <!-- Hot area video and list cate -->
+      <section class="container-fluid hot-videos-area">
+        <div class="title-experience-trick-cook">
+          Kinh nghiệm hay, mẹo vặt, nấu ăn
+        </div>
+        <div class="row list-cate">
+          <div class="col-sm-7 cate-left">
+            <a href="/">
+              <div
+                class="video-image btn-play-video"
+                data-youtube-url="https://www.youtube.com/embed/dR6Xrs7_zAc"
+              >
+                <img src="images/maxresdefault.jpg" alt="Hot video" />
+                <i class="icon-youtube-home"></i>
+              </div>
+              <div class="video-title">
+                Top 10 máy giặt bán chạy nhất Điện máy XANH năm 2019 | cập nhật
+                6 tháng đầu 2020
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-5 cate-right">
+            <a class="row video-item">
+              <div
+                class="col-sm-3 video-image btn-play-video"
+                data-youtube-url="https://www.youtube.com/embed/BQ3s5XjsJ7c"
+              >
+                <i class="bgr-img-1"></i>
+              </div>
+              <div class="col-sm-9 video-title">
+                Top 10 máy giặt bán chạy nhất Điện máy XANH năm 2019
+              </div>
+            </a>
+            <a class="row video-item">
+              <div
+                class="col-sm-3 video-image btn-play-video"
+                data-youtube-url="https://www.youtube.com/embed/BQ3s5XjsJ7c"
+              >
+                <i class="bgr-img-2"></i>
+              </div>
+              <div class="col-sm-9 video-title">
+                Top 10 máy giặt bán chạy nhất Điện máy XANH năm 2019
+              </div>
+            </a>
+
+            <a class="row video-item">
+              <div class="col-sm-3 video-image btn-play-video">
+                <i class="bgr-img-3"></i>
+                <!-- <img src="/images/top-10-noi-chien-khong-dau-ban-chay-nhat-6-thang-d-665x320.jpg" alt=""> -->
+              </div>
+              <div class="col-sm-9 video-title">
+                Top 10 máy giặt bán chạy nhất Điện máy XANH năm 2019
+              </div>
+            </a>
+            <a class="row video-item">
+              <div class="col-sm-3 video-image btn-play-video">
+                <i class="bgr-img-4"></i>
+                <!-- <img src="/images/top-10-may-say-quan-ao-ban-chay-nhat-6-thang-dau-n-1-665x320.jpg" alt=""> -->
+              </div>
+              <div class="col-sm-9 video-title">
+                Top 10 máy giặt bán chạy nhất Điện máy XANH năm 2019
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="/" class="view-all-cate">Xem tất cả bài viết </a>
+          </div>
+        </div>
+        <div class="video-player-modal d-none">
+          <div class="video-player-body">
+            <i class="close-btn fa fa-times"></i>
+            <div class="video-player"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Image ads -->
+      <section class="ads-img">
+        <img src="images/03-1200x140.jpg" alt="" />
+      </section>
+      <!-- Most searched -->
+      <section class="most-searched">
+        <ul class="list-search">
+          <div class="title-search-most">Tìm kiếm nhiều nhất: </div>
+          <li class="item-search"><a href="/" class="link-search">Vệ sinh máy giặt</a></li>
+          <li class="item-search"><a href="/" class="link-search">Vệ sinh quạt</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy bơm nước</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Món ngon mỗi ngày</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Tivi Sony</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Tivi Samsung</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Quạt điều hòa Boss</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy giặt mới 2020</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Tủ lạnh Mini</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy giặt Midea</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Tư vấn Đồng hồ</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy giặt LG</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy lạnh mới 2020</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy lạnh Electrolux</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy lạnh LG</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Máy rửa xe</a></li>
+          <li class="item-search"><a href="/" class="link-search">• Tư vấn thiết bị thông minh ...</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container-fluid">
+      <div class="footer">
+        <div class="row-footer-1">
+          <ul class="col-footer">
+            <li class="col-footer-link title-col">Thông tin điện máy xanh</li>
+            <li><a href="/" class="col-footer-link">Hệ thống 1064 siêu thị <small>(8:00 - 22:00)</small></a></li>
+            <li><a href="/" class="col-footer-link">Giới thiệu công ty</a></li>
+            <li><a href="/" class="col-footer-link">Tìm việc làm</a></li>
+            <li><a href="/" class="col-footer-link">Liên h góp ý</a></li>
+            <li class="col-hidden"><a href="/" class="col-footer-link ">Nội quy cửa hàng</a></li>
+            <li class="col-hidden"><a href="/" class="col-footer-link">In hóa đơn điện tử</a></li>
+            <li class="col-hidden"><a href="/" class="col-footer-link">Bán hàng doanh nghiệp</a></li>
+            <p class="col-footer-link showMore">Xem thêm</p>
+          </ul>
+          <ul class="col-footer">
+            <li class="col-footer-link title-col">Hỗ trợ khách hàng</li>
+            <li><a href="/" class="col-footer-link">Tìm hiểu về mua trả góp</a></li>
+            <li><a href="/" class="col-footer-link">Giao hàng, lắp đặt</a></li>
+            <li><a href="/" class="col-footer-link">Bảo hành, đổi trả</a></li>
+            <li><a href="/" class="col-footer-link">DV vệ sinh máy lạnh, máy giặt, quạt</a></li>
+            <li class="col-hidden-2"><a href="/" class="col-footer-link ">Tìm trung tâm bảo hành</a></li>
+            <li class="col-hidden-2"><a href="/" class="col-footer-link">Chất lượng phục vụ</a></li>
+            <li class="col-hidden-2"><a href="/" class="col-footer-link">Hướng dẫn trao thưởng</a></li>
+            <li class="col-hidden-2"><a href="/" class="col-footer-link">Hướng dẫn mua hàng</a></li>
+            <li class="col-hidden-2"><a href="/" class="col-footer-link">Chính sách khui hộp sản phẩm apple</a></li>
+            <li class="col-hidden-2"><a href="/" class="col-footer-link">Xem bản mobile</a></li>
+            <p class="col-footer-link showMore-2">Xem thêm</p>
+          </ul>
+          <ul class="col-footer">
+            <li class="col-footer-link title-col">Tổng đài hỗ trợ (Gọi miễn phí)</li>
+            <li><p class="col-footer-link">Mua hàng <a class="tel-phone" href="tel:1800.1061"> 1800.1061 </a> (7:30 - 22:00)</p></li>
+            <li><p class="col-footer-link">Kỹ thuật <a class="tel-phone" href="tel:1800.1061"> 1800.1764 </a> (7:30 - 22:00)</p></li>
+            <li><p class="col-footer-link">Bảo hành <a class="tel-phone" href="tel:1800.1061"> 1800.1065 </a> (8:00 - 21:00)</p></li>
+            <li><p class="col-footer-link">Khiếu nại <a class="tel-phone" href="tel:1800.1061"> 1800.1061 </a> (8:00 - 21:30)</p></li>
+            <li><i class="icondmx-btc"></i> <i class="icondmx-huychuong"></i> <i class="icondmx-dmca"></i></i></li>
+          </ul>
+          <ul class="col-footer">
+              <li class="social">
+                <a href="/" class="social__share"><i class="iconfb"></i> 1559.6k fan </a>
+                <a href="/" class="social__share"><i class="iconyt"></i>  490k đăng ký  </a>
+              </li>
+              <li class="group-of-dmx">
+                <p>Website cùng tập đoàn:</p>
+                <i class="iconmagd"></i>
+                <i class="icontgdd"></i>
+                <i class="iconbhx"></i>
+              </li>
+          </ul>
+        </div>  
+        <div class="row-footer-2">
+          <p>© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. 
+            GP số 57/GP-TTĐT do Sở TTTT TP HCM cấp ngày 30/07/2018. <br>
+            Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Quận 1, TP.Hồ Chí Minh. Điện thoại: (028)3812.59.60. Email: cskh@dienmayxanh.com.
+            Chịu trách nhiệm nội dung: Trần Nhật Linh. 
+            <a href="/" >Xem chính sách sử dụng web</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div id="goto-top">↑</div>
+    <script src="plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
+  </body>
+</html>
