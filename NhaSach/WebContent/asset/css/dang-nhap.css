@@ -1,0 +1,8 @@
+@charset "utf-8";
+.modal {
+	color: #000;
+}
+#myModalLabel {
+	color: #00A0E6;
+    text-transform: uppercase;
+}

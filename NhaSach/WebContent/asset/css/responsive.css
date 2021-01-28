@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@media only screen and (max-width: 600px) {
+	.tieu-de-sach {
+		font-size: 1.5rem;
+	}
+	.nav-mobile__area {
+		display: block;
+	}
+	.top-banner {
+		display: none;
+	}
+	.menu-top {
+		display: none;
+	}
+	.nav__bars-btn {
+		display: block;
+	}
+	.logo {
+		color: #fff;
+	}
+	.nav-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#search-input {
+		width: 90%;
+		height: 31px;
+		border-radius: 5px;
+	}
+	.danh-muc-loai-sach {
+		display: none;
+	}
+	.gio-hang-icon, .account {
+	    font-size: 2rem;
+	    color: #fff;
+	} 
+	.form-search {
+		width: 100%;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.btn-search {
+		top: -2px;
+	    right: 10px;
+	}
+	.show-hidden-area {
+	    text-align: center;
+	    position: absolute;
+	    top: 8px;
+    	right: 23px;
+	    font-size: 1.5rem;
+	}	
+	.list-group-item-danh-muc {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    background-color: #e4b882;
+    }
+    .ten-nguoi-dung {
+    	color: #111311;
+    	font-size: 1.5rem;
+    }
+    /* Card mobile */
+    .card-deck {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.card {
+	    min-width: 40%;
+	    max-width: 50%;
+	    margin-bottom: 10px !important;
+	}
+	img.card-img-top {
+	    margin-top: 5px;
+	    width: 100%;
+	    height: 45%;
+	}
+	
+	/* Responsive Gio Hang */
+	.gio-hang {
+		font-size: 1.5rem;
+		color: #000;
+	}
+	.chi-tiet-trai {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 60%;
+	    margin: 0;
+	}
+	.chi-tiet-phai {
+	    width: 80%;
+	    display: flex;
+	    flex-direction: column;
+	    margin-left: 10px;
+	    padding-bottom: 10px
+	}
+	.ten-sach {
+	    font-size: 1.6rem;
+	}
+	.chi-tiet-trai .chi-tiet-anh {
+	    height: 87%;
+	}
+	.form-gio-hang {
+	    display: block;
+	}
+	.tong-tien-area {
+	    line-height: 3.8rem;
+	    flex-direction: column;
+	    align-items: baseline;
+	}
+	.tong-tien {
+	    font-size: 1.8rem;
+	}
+	.gio-hang-trong {
+	    flex-direction: column;
+	    line-height: 4rem;
+	}
+	.dat-hang-title {
+	    padding-bottom: 5px;
+	    margin: 0;
+	}
+	
+}

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 62.5%;
+}
+
+.btn {
+	font-size: 1.5rem !important;
+}
+
+.gio-hang-area {
+	width: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.tiep-tuc-mua-hang, .thanh-toan {
+	color: #fff;
+}
+
+.tiep-tuc-mua-hang:hover, .thanh-toan:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu-right {
+	margin-left: 15px;
+	width: 80%;
+}
+
+.dat-hang-title {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d8b8b8;
+}
+
+.gio-hang {
+	
+}
+
+.danh-sach-gio-hang {
+	list-style: none;
+	padding-left: 0;
+}
+
+.chi-tiet-gio-hang {
+	display: flex;
+	margin-top: 10px;
+	border-bottom: 1px solid #ccc;
+}
+/* START CHI TIẾT TRÁI */
+.chi-tiet-trai {
+	width: 12%;
+	margin: 0 15px 15px 0;
+}
+
+.chi-tiet-trai .chi-tiet-anh {
+	width: 100%;
+}
+/* END CHI TIẾT TRÁI */
+
+/* START CHI TIẾT PHẢI */
+.chi-tiet-phai {
+	width: 88%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+/* START CHI TIẾT PHẢI TRÊN */
+.chi-tiet-phai .chi-tiet-phai-tren {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.chi-tiet-phai .chi-tiet-phai-tren .ten-sach {
+	font-weight: 600;
+}
+
+.tac-gia {
+	
+}
+/* END CHI CHI TIẾT PHẢI */
+/* START CHI TIẾT PHẢI DƯỚI */
+.chi-tiet-phai .chi-tiet-phai-duoi {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.chi-tiet-phai .chi-tiet-phai-duoi .gia {
+	margin-left: 5px;
+	color: #4a90e2;
+	font-weight: 500;
+}
+
+.chi-tiet-phai .chi-tiet-phai-duoi .so-luong {
+	width: 14%;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.chi-tiet-phai .chi-tiet-phai-duoi .thanh-tien {
+	margin-right: 10px;
+}
+
+.ten-sach {
+	font-size: 1.8rem;
+}
+
+.tong-tien-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tong-tien {
+	font-size: 22px;
+	font-weight: 600;
+}
+/* START BUTTON */
+.button-area {
+	
+}
+
+.btn-cap-nhat, .btn-cap-nhat {
+	padding: 0;
+}
+
+.btn-cap-nhat {
+	
+}
+
+.form-gio-hang {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-xoa {
+	color: #fff;
+}
+
+.btn-xoa:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/* END BUTTON */
+
+/* GIỎ HÀNG TRỐNG*/
+.gio-hang-trong {
+	display: flex;
+	align-items: center;
+}
+
+.btn-chon-mua-hang {
+	margin-left: 5px;
+}
+.da-mua {
+	color: #5f4da5;
+    font-weight: bold;
+}

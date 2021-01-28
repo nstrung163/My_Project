@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.ma-hoa-don {
+	width: 6%;
+}
+.ho-ten {
+	width: 10%;
+}
+.so-dien-thoai {
+	width: 10%;
+}
+.dia-chi {
+	width: 7%;
+}
+.gia {
+	width: 8%;
+}
+.thanh-tien {
+	width: 9%;
+}
+.so-luong-mua {
+	width: 14%;
+}
+.so-luong-mua-input {
+	 width: 25% !important;
+}
+.xac-nhan {
+	width: 9%;
+}

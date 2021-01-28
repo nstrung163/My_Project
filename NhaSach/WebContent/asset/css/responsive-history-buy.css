@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@media only screen and (max-width: 600px) {
+	.chi-tiet-trai {
+		display: none;
+	}
+	.chi-tiet-phai .chi-tiet-phai-duoi {
+		display: block;
+	}
+	.chi-tiet-phai .chi-tiet-phai-duoi .gia {
+		margin: 0;
+	}
+	.chi-tiet-phai-tren {
+		width: 114%;
+	}
+	.chi-tiet-phai .chi-tiet-phai-tren {
+		align-items: baseline;
+	}
+	.ngay-mua {
+		text-align: center;
+    	width: 31%;
+	}
+	.btn-chon-mua-hang {
+	    width: 100%;
+   		height: 33px;
+	}
+	.gio-hang-trong {
+	    line-height: 3rem;
+	}
+}
